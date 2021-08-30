@@ -37,7 +37,7 @@ services:
       - INTERNAL_SUBNET=10.6.0.0
 
     volumes:
-      - ./wireguard:/config
+      - /etc/wireguard:/config
       - /lib/modules:/lib/modules
     ports:
       - "51820:51820/udp"
